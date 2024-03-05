@@ -1,0 +1,7 @@
+packages: ./1brc.cabal
+
+profiling-detail:none
+
+package *
+    profiling-detail:late
+    ghc-options: -O2 -fexpose-all-unfoldings -j3 -fprof-late -dumpdir dumps -ddump-simpl -ddump-to-file -ddump-stg-final
